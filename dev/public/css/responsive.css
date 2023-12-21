@@ -1,0 +1,82 @@
+@media only screen and (min-width: 1100px) {
+    #comments {
+        display: block;
+    }
+
+    #phonecomment-div {
+        display: none;
+    }
+
+    #phonepostcomment-div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .maingrid {
+        grid-template-columns: auto auto !important;
+    }
+
+    #logo {
+        margin-left: 10%;
+    }
+
+    #loginbutton {
+        margin-right: 10%;
+    }
+
+    #logoutimg {
+        margin-right: 10%;
+    }
+
+    #thread {
+        width: 220px;
+        border-radius: 19px 19px 19px 19px !important;
+        margin: auto !important;
+    }
+
+    #comments {
+        display: none;
+    }
+
+    .phone-comment {
+        display: block;
+    }
+
+    #phonepostcomment-div {
+        display: block;
+        width: 95%;
+    }
+
+    #hank {
+        top: 0;
+        margin-top: 20%;
+        height: 15%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .maingrid {
+        grid-template-columns: auto !important;
+    }
+
+    #logo {
+        margin-left: 1%;
+    }
+
+    #loginbutton {
+        margin-right: 1%;
+    }
+
+    #logoutimg {
+        margin-right: 1%;
+    }
+
+    #exclusives {
+        display: none;
+    }
+
+}

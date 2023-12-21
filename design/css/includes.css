@@ -1,0 +1,154 @@
+* {
+    image-rendering: pixelated;
+    font-family: undertale;
+}
+
+@font-face {
+    font-family: undertale;
+    src: url('../fonts/DeterminationMonoWebRegular-Z5oq.ttf') format('truetype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/background1.png);
+    background-attachment: fixed;
+    animation: moveBackground 100s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1000% -3000%;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FF6190; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #da537c; 
+}
+
+/*Header CSS*/
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    outline: solid #FF6190 1vh;
+    margin-top: -1%;
+}
+
+.navsleft {
+    float: left;
+    margin: 1%;
+}
+
+.navsright {
+    float: right;
+    margin: 1%;
+}
+
+#logo {
+    margin-top: 2vh;
+    height: 8vh;
+    transition: 0.2s;
+    margin-left: 20vw;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+#exclusives {
+    margin-top: 5vh;
+    height: 3vh;
+    rotate:calc(-10deg);
+}
+
+#logosmall {
+    display: none;
+}
+
+#logo:hover {
+    background-color: #FFB6CC;
+    border-radius: 10px;
+}
+
+#loginbutton {
+    margin-right: 20%;
+    margin-top: 3vh;
+    height: 7vh;
+}
+
+#loginbutton:hover {
+    background-image: url(../img/loginfull.png);
+    background-size: cover;
+}
+
+#profilebutton {
+    margin-top: 2.6vh;
+    height: 7vh;
+    border-radius: 50%;
+}
+
+#profilebutton:hover {
+    
+}
+
+#addpost {
+
+}
+
+/*---------- footer ----------*/
+
+footer {
+    width: 100vw;
+    max-width:100%;
+    height: 100px;
+    background-image: url(../img/footer.png);
+    color: white;
+    outline: solid #FF6190 1vh;
+}
+
+#dots {
+    position: relative;
+    font-size: 80px;
+    background-image: url(../img/footer.png);
+    float: left;
+}
+
+a {
+    color: inherit;
+}
+
+#socialmedia {
+    position: relative;
+    float: right;
+    font-size: 50px;
+    line-height: 100px;
+    margin-right: 10px;
+}
+
+#footertext {
+    float: left;
+    position: relative;
+    line-height: 60px;
+    text-decoration: underline;
+    margin-left: 10px;
+}

@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1100px) {
+
+    .maingrid {
+        grid-template-columns: auto auto !important;
+    }
+
+    #logo {
+        margin-left: 10%;
+    }
+
+    #loginbutton {
+        margin-right: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .maingrid {
+        grid-template-columns: auto !important;
+    }
+
+    #logo {
+        margin-left: 1%;
+    }
+
+    #loginbutton {
+        margin-right: 1%;
+    }
+
+    #exclusives {
+        display: none;
+    }
+
+}

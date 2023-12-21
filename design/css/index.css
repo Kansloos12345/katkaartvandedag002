@@ -1,0 +1,316 @@
+.maingrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#title {
+    margin: 64px 0px 64px 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 3vh;
+}
+
+#thread {
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #ffffff;
+    outline: solid #FF80A6 5px;
+    border-radius: 19px 0px 0px 19px;
+    background-image: url(../img/background1.png);
+    background-size: 500px;
+    height: 420px;
+}
+
+#small-thread {
+    display: flex;
+    background-color: #ffffff;
+    outline: solid #FF80A6 5px;
+    border-radius: 19px;
+    background-image: url(../img/background1.png);
+    background-position-x: right;
+    background-size: 500px;
+    flex-direction: row;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 25%;
+    transition: 0.5s;
+}
+
+#card {
+    width: 220px;
+    height: auto;
+    outline: solid #FF80A6 5px;
+    border-radius: 19px;
+    background-image: url(../img/background1.png);
+    background-size: 500px;
+}
+
+#card-backdrop {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 16px;
+    font-size: 32px;
+    color: #FF80A6;
+    transition: margin-left 0.5s;
+}
+
+#small-thread:hover #card-backdrop {
+    margin-left: 32px;
+}
+
+#small-thread:not(:hover) #card-backdrop {
+    margin-left: 16px;
+}
+
+#small-thread:hover {
+    transform: scale(1.1);
+}
+
+.pfp {
+    height: 32px;
+    width: 32px;
+}
+
+.postcomment {
+    display: flex;
+    border-bottom: solid #EE88AF50 3px;
+    background-color: #ffffff;
+    margin-left: 0.7%;
+    margin-bottom: 30px;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    height: 3.5rem;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.comment {
+    display: flex;
+    outline: solid #FF80A6 3px;
+    background-color: #FFEEF7;
+    border-radius: 19px;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 0.5rem;
+    padding-top: 0.7rem;
+    width: 75%;
+    align-items: center;
+    overflow: hidden;
+    height:fit-content;
+}
+
+#input {
+    border-bottom: solid #EE88AF50 3px;
+}
+
+.info {
+    margin-top: 0px;
+    margin-left: 0.5rem;
+    margin-bottom: 0px;
+    text-transform:capitalize;
+}
+
+#typecomment {
+    width: 75%;
+    overflow-wrap: break-word;
+}
+
+input {
+    border: none;
+    background-color: #00000000;
+    width: 100%;
+}
+
+#postbutton {
+    margin-left: auto;
+    margin-right: 10%;
+    background-color: #FF80A6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+#comments {
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* LOGIN */
+
+#logintitle {
+    margin: 100px 220px -12px 0px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#registertitle {
+    margin: 100px 140px 10px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#login {
+    background-color:#EE88AF;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    padding: 16px 0px 32px 0px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    width: 320px;
+    border-radius: 10px;
+    outline: solid 3px #000000;
+}
+
+.inputs {
+    margin: 0px;
+    height: 30px;
+    width: 245px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    text-decoration: none;
+    outline: solid 1px #000000;
+}
+
+.inputs:hover {
+    outline: solid 1px #000000;
+}
+
+label {
+    margin-top: 10px;
+    float: left;
+    margin-left: 10%;
+}
+
+#pronouns {
+    height: 30px;
+    width: 80%;
+    cursor: pointer;
+}
+
+#pronouns:hover {
+    border: none;
+}
+
+#submit {
+    background-color: #82F080;
+    margin-top: 25px;
+    width: 250px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: solid #000000 1px;
+    cursor: pointer;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #71d46f;
+}
+
+#hrefs:hover {
+    color: purple;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #login {
+        width: 300px;
+        margin: 0 auto 100px auto;
+    }
+
+}
+
+
+/* PROFILE PAGE */
+
+.account {
+    display: flex;
+    outline: solid #000000 3px;
+    background-image: url(../img/background.png);
+    background-size: 30%;
+    border-radius: 19px;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 1.5rem;
+    width: 50%;
+    align-items: center;
+    overflow: hidden;
+    height:fit-content;
+}
+
+.accountpfp {
+    margin-right: 3%;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.editbutton {
+    margin-left: auto;
+    background-color: #82F080;
+    outline: solid #000000 1px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: larger;
+}
+
+.fade-in {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#emailecho {
+    text-transform: lowercase;
+}
+
+.profileinfo {
+    margin-left: 0.5rem;
+    margin-bottom: 0px;
+    margin-top: 1%;
+}
+
+.changeinfo {
+    display: none;
+    outline: solid #000000 3px;
+    background-image: url(../img/background.png);
+    border-radius: 5px;
+    margin-top: 64px;
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    height: fit-content;
+}
